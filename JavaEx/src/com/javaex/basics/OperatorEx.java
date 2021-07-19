@@ -4,9 +4,47 @@ public class OperatorEx {
 	public static void main(String[] args) {
 //		arithOperEx();
 //		logicOperEx();
-		bitOperEx();
+//		bitOperEx();
+//		bitShiftOperEx();
+		conditionalOperEx();
+	}
+	//	3항 연산자
+	private static void conditionalOperEx() {
+		//	문법: 조건식 ? 참일 때의 값 또는 식 : 거짓일 때의 값 또는 식
+		int a = 10;
+		
+		String result;
+		
+		//	a가 짝수이면 "짝수", 홀수이면 "홀수" 출력
+		result = a % 2 == 0 ? "짝수" : "홀수" ;
+		System.out.println(a + "는 " + result);
+		
+		int  score = 60;
+		//	만약 score >= 80 -> Good
+		//	    score >= 50 -> Pass
+		//	    score < 50	-> Fail
+		
+		String message = score >= 80? "Good!" : score >= 50 ? "Pass" : "Fail";
+		System.out.println("Score: " + score + ", 결과: " + message);
 	}
 	
+	//	비트 시프트 연산자
+	private static void bitShiftOperEx() {
+		//	비트 단위로 이동
+		int val = 1;
+		//	좌측 시프트(<<)
+		System.out.println(val);
+		System.out.println(Integer.toBinaryString(val << 1));
+		System.out.println(Integer.toBinaryString(val << 4));
+		
+		System.out.println(Integer.toBinaryString(2021));
+		// 우측 시프트(>>)
+		val = -2021;
+		System.out.println(Integer.toBinaryString(val));
+		System.out.println(Integer.toBinaryString(val >> 2));
+		//	우측 시프트(>>>)
+		System.out.println(Integer.toBinaryString(val >>> 2));
+	}
 	//	비트 연산자
 	private static void bitOperEx() {
 		//	하드웨어 제어, 이미지 처리 등
