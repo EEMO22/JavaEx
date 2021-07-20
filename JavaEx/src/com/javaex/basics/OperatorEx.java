@@ -5,8 +5,8 @@ public class OperatorEx {
 //		arithOperEx();
 //		logicOperEx();
 //		bitOperEx();
-//		bitShiftOperEx();
-		conditionalOperEx();
+		bitShiftOperEx();
+//		conditionalOperEx();
 	}
 	//	3항 연산자
 	private static void conditionalOperEx() {
