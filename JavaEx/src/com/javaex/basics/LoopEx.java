@@ -3,14 +3,59 @@ package com.javaex.basics;
 import java.util.Scanner;
 
 public class LoopEx {
-
+	
 	public static void main(String[] args) {
 //		whileEx();
 //		whileGugu();
-		doWhileEx();
+//		doWhileEx();
+//		forGugu();
+//		continueEx();
+//		loopPractice01();
+		loopPractice02();
 		System.out.println("End of Code");
 	}
-	
+		private static void loopPractice02() {
+			for (int i = 1; i < 7; i++) {
+				for (int j = 0; j < i ; j++){
+					System.out.print("*");
+				}
+				System.out.println("");
+			}
+		}
+		private static void loopPractice01() {
+			
+			for (int i = 2; i <= 9; i++) {
+				for (int j = 1; j <= 9; j++) {
+					System.out.println(i + " * " + j + " = " + (i * j));
+				}
+				System.out.println("");
+			}
+		}
+		private static void continueEx() {
+			
+			for (int i = 1;
+				i <= 20;
+				i++) {
+				//	2의 배수, 3의 배수는 출력하지 않음
+				if ( i % 2 == 0 || i % 3 == 0)
+					continue;
+				System.out.println(i);
+			}
+		}
+		private static void forGugu() {
+			Scanner scanner = new Scanner(System.in);
+			
+			System.out.println("단을 입력하세요.");
+			int dan = scanner.nextInt();
+			
+			for (int i = 1;	//	초기화
+				i <= 9;		//	반복 조건
+				i++) {		//	증감식
+				System.out.println(dan + " * " + i + " = " + (dan * i));
+			}
+			
+			scanner.close();
+		}
 		private static void doWhileEx() {
 			//	적어도 한 번은 수행되어야 하는 반복,
 			//	반복 조건이 반복문 내부에서 할당되는 경우
