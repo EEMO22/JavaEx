@@ -1,5 +1,7 @@
 package practice02;
 
+import java.util.Arrays;
+
 public class Problem05 {
 
 	public static void main(String[] args) {
@@ -12,10 +14,27 @@ public class Problem05 {
 				{ 89, 83, 93, 94, 78 }
 		};
 		
-////		for (int value:scoreBoard) {
-////			System.out.println(value + "\t");
-//		}
+		int sum = 0;
+		int count = 0;
+	
+		
+		for (int i = 0; i < scoreBoard.length; i++) {
+			for (int j = 0; j < scoreBoard[i].length; j++) {
+				
+				if (scoreBoard[i][j] >= 85) {
+					
+					sum += scoreBoard[i][j];
+					
+					int upper[] = {scoreBoard[i][j]};
+					count += upper.length;
+					
+				}
+			}
+					
+			}
+		System.out.println("총 합: " + sum + "점");
+		System.out.println("평균 :" + (sum / count) + "점");
+		
+		}
 
 	}
-
-}

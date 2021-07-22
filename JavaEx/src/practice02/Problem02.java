@@ -18,6 +18,7 @@ public class Problem02 {
 			sum += num;
 		}
 		System.out.println("평균은 " + (sum / arr.length) + "입니다.");
+		scanner.close();
 	}
 
 }

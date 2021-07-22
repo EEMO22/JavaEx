@@ -14,8 +14,5 @@ public class Problem03 {
 		
 		System.out.println(c);
 		
-		
-		
-	
 	}
 }
