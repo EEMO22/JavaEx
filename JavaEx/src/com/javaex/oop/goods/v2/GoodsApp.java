@@ -4,6 +4,7 @@ public class GoodsApp {
 
 	public static void main(String[] args) {
 		Goods notebook = new Goods();
+		
 		//	setter를 이용한 우회 접근
 
 		notebook.setName("LG Gram");
