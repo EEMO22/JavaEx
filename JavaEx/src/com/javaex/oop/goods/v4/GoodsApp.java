@@ -15,12 +15,12 @@ public class GoodsApp {
 //		smartphone.setPrice(800000);
 		
 		//	출력
-		System.out.printf("%s, %d원%n",
-				notebook.getName(),
-				notebook.getPrice());
-		System.out.printf("%s, %d원%n",
-				smartphone.getName(),
-				smartphone.getPrice());
+//		System.out.printf("%s, %d원%n",
+//				notebook.getName(),
+//				notebook.getPrice());
+//		System.out.printf("%s, %d원%n",
+//				smartphone.getName(),
+//				smartphone.getPrice());
 		
 		notebook.showInfo();
 		smartphone.showInfo();

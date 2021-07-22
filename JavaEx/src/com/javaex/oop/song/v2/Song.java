@@ -1,4 +1,4 @@
-package com.javaex.oop.song.v1;
+package com.javaex.oop.song.v2;
 
 public class Song {
 	
@@ -9,10 +9,16 @@ public class Song {
 	private int year;
 	private int track;
 	
-	public Song (String artist, String title, String album, 
-			int year, int track, String composer) {
+	
+	
+	public Song (String title, String artist) {
 		this.title = title;
 		this.artist = artist;
+	}
+	
+	public Song (String artist, String title, String album, 
+			int year, int track, String composer) {
+		this(title, artist);
 		this.album = album;
 		this.composer = composer;
 		this.year = year;

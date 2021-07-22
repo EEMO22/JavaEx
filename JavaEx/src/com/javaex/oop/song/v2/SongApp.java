@@ -1,4 +1,4 @@
-package com.javaex.oop.song.v1;
+package com.javaex.oop.song.v2;
 
 public class SongApp {
 
