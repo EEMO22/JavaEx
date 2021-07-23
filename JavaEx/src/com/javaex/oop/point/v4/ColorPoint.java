@@ -37,6 +37,13 @@ public class ColorPoint extends Point {
 				x, y, color);
 	}
 	
-	// TODO: Point 클래스의 draw(boolean) 메서드를 오버라이드 해 보기
-
+	//	/Point 클래스의 draw(boolean) 메서드를 오버라이드
+	@Override
+	public void draw(boolean bShow) {
+		String message = String.format("점[x = %d, y = %d, color=%s]을 ",
+				x, y, color);
+		message += bShow ? "그렸습니다." : "지웠습니다.";
+		System.out.println(message);
+		
+	}
 }
