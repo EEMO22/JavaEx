@@ -19,7 +19,7 @@ public class ExceptionEX {
 		try {
 			double result = except.divide(100, 0);
 			except.executeRuntimeException();
-			//	except의 excuteException 메서드 내의 예외를 대신 처리
+			//	except의 executeException 메서드 내의 예외를 대신 처리
 			except.excuteException();
 		} catch (CustomArithmeticException e) {
 			System.err.println(e.getMessage());

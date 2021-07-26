@@ -12,7 +12,7 @@ public class ThrowExcept {
 	
 	public void executeRuntimeException() {
 		System.out.println("런타임 예외");
-		throw new RuntimeException("RuntimeException");	//	Uncheched Exception
+		throw new RuntimeException("RuntimeException");	//	Unchecked Exception
 	}
 	
 	public double divide(int num1, int num2) {
