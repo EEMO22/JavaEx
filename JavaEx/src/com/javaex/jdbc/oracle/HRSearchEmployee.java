@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class HRSearchEmployee {
 
 	public static void main(String[] args) {
-		String dbur1 = "jdbc:oracle:thin:@localhost:1521:xe";
+		String dburl1 = "jdbc:oracle:thin:@localhost:1521:xe";
 		Connection conn = null;
 		Statement stmt = null;
 		ResultSet rs = null;
@@ -17,7 +17,7 @@ public class HRSearchEmployee {
 		
 		try {
 			Class.forName("oracle.jdbc.driver.OracleDriver");
-			conn = DriverManager.getConnection(dbur1, "hr", "hr");
+			conn = DriverManager.getConnection(dburl1, "hr", "hr");
 			String sql = "SELECT first_name||' '||last_name name, " + " email, " + 
 						" phone_number, hire_date FROM employees " +
 							" WHERE lower(first_name) LIKE '%" + word.toLowerCase() + "%' OR" +
