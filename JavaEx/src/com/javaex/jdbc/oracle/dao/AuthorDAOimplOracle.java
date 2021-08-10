@@ -111,7 +111,7 @@ public class AuthorDAOimplOracle implements AuthorDAO {
 		int insertedCount = 0;
 		
 		try {
-			conn = get.Connection();
+			conn = getConnection();
 			//	실행 계획
 			String sql = "INSERT INTO author " +
 						" VALUES(seq_author_id.NEXTVAL, ?, ?)";

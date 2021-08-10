@@ -21,6 +21,13 @@ public class HRSearchEmployeeSalary {
 		int sMin = sc.nextInt();
 		System.out.print("최대 급여를 입력해 주세요: ");
 		int sMax = sc.nextInt();
+		
+		 if (sMin > sMax) {
+	            //    값을 바꾼다
+	            int temp = sMin;
+	            sMin = sMax;
+	            sMax = temp;
+	        }
 	
 		try {
 			Class.forName("oracle.jdbc.driver.OracleDriver");
