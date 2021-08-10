@@ -10,7 +10,7 @@ import java.util.Scanner;
 public class HRSearchEmployeeSalaryPstmt {
 
 	public static void main(String[] args) {
-		String dburl1 = "jdbc:oracle:thin:@localhost:1521:xe";
+		String dburl1 = "jdbc:oracle:thin:@119.197.78.15:1521:xe";
 		Connection conn = null;
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;
